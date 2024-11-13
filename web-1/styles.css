@@ -1,0 +1,136 @@
+.my-btn {
+    place-items: center;
+    margin-top: 5px;
+    width: 50px;                 /* задаем ширину кнопки */
+    height: 50px;                /* задаем высоту кнопки */
+    border: none;                /* отключаем обводку */
+    background: #ac4402;         /* задаем серый цвет кнопки */
+    color: #b3e1df;                /* задаем белый цвет текста внутри кнопки */
+    font-size: 2rem;           /* увеличим размер шрифта */
+    font-family: 'Times-new roman', sans-serif, 'Helvetica'; /* сменим шрифт */
+    cursor: pointer;             /* при наведении на кнопку курсор будет изменен
+    user-select: none;           /* отключаем возможность выделить текст внутри кнопки */
+  }
+  
+  /* hover - это состояние элемента, когда на него наведен курсор */
+  .my-btn:hover
+  {
+    background: #be5c00; /* при наведение курсора на кнопку, она будет окрашена в серый */
+  }
+  
+  /* active - это состояние активации элемента. В случае кнопки - нажатие на нее */
+  .my-btn:active
+  {
+    transform: scale(0.95);
+    filter: brightness(130%); /* увеличим интенсивность цвета для эффекта вспышки */
+  }
+  
+  /* селектор для кнопок первостепенных операций */
+  .my-btn.primary
+  {
+    background: rgba(6, 6, 6, 0.632);
+  }
+  .my-btn.primary:hover
+  {
+    background: #e5ca9c;
+  }
+  
+  /* селектор для кнопок второстепенных операций */
+  .my-btn.secondary
+  {
+    background: #b76b01; /* цвет кнопки сервый */
+  }
+  .my-btn.secondary:hover
+  {
+    background: #9d7b00; /* при наведение курсора на кнопку, она будет окрашена в серый */
+  }
+  
+  /* селектор для кнопки расчета выражения (=) */
+  .my-btn.execute
+  {
+   width: 104px; /*сделаем кнопку шире других */
+  }
+  
+  .my-btn.URL:active{
+    transform: scale(0.95);
+  }
+  
+  .my-btn.theme{
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-image: url("theme-dark.jpg");
+    background-size: cover;
+    border-radius: 50px;
+    margin:0 auto;
+  }
+  .my-btn.theme:hover {
+    opacity: 0.8;
+  }
+  
+  .my-btn.theme:active {
+    transform: scale(0.95);
+  }
+  
+  /* селектор для поля вывода результата */
+  .result {
+    width: 215px;
+    height: 70px;
+    margin: 0 auto;
+    background: rgb(163, 163, 163); /* цвет можно задавать и таким образом */
+    border-radius: 20px;
+    text-align: right;           /* примагнитим текст к правой стороне */
+    color: #ffffff;              /* цвет текста белый */
+    font-size: 4rem;
+    font-family: 'Times-new roman', Helvetica, sans-serif;
+  }
+
+  .calculator
+  {
+    place-items: center;
+    margin: 0 auto;
+    width: 217px;
+    display: grid;
+    grid-template-columns: 55px 55px 55px 55px;
+  }
+  
+  .execute{
+    grid-column: span 2 / span 4;
+  }
+
+  body
+  {
+    margin: 0 auto;
+    height: 100vh;
+    background-color: rgb(74, 59, 59);
+    background-size: cover;
+    grid-column: auto;
+    display: grid;
+    place-items: center;
+  }
+  
+  .text{
+    text-align: center;
+  }
+
+  .txt
+  {
+    background-color: #161616;
+    color: white;
+    border: none;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0.9rem;
+    border-radius: 20px;
+    width: 75vw;
+    height: 5vh;
+  }
+  
+  #me
+  {
+    color: #000000;
+    text-align: left;
+    font-size: 1rem;
+    font-family: sans-serif, 'Times new roman';
+    margin:0 auto;
+  }
